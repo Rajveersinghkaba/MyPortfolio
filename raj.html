@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#card">Services</a></li>
+        <li><a href="#contact">Contact</a></li>    
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Rajveer Singh Kaba</h1>
+      <h2>Student and developer</h2>
+      <div class="home-sci">
+        <a href="https://www.linkedin.com/in/rajveer-singh-kabawat-5b4985199" target="_blank">
+          <img src="linkedin-square-logo-24.png"LinkedIn Logo">
+        </a>
+        <a href="https://github.com/Rajveersinghkaba" target="_blank">
+          <img src="github-logo-24.png"github Logo">
+        </a>
+        <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
+          <img src="gmail-logo-24.png"Gmail Logo">
+        </a>
+        <a href="https://twitter.com/home?lang=en-in" target="_blank">
+          <img src="twitter-logo-24.png"Gmail Logo">
+        </a>
+        
+    </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about_container">
+      <div class="about_content">
+        <section class="imageSection">
+          <img src="20230207_114300.jpg">
+        </section>
+          <section class="infoSection">
+            <h1>About me</h1>
+            <h2>Hi, I'm Rajveer Singh Kaba</h2>
+            <p>I am a passionate web developer with a focus on front-end development. I love creating intuitive and visually appealing user experiences.I have a strong foundation in HTML, CSS, and JavaScript, along with expertise in various front-end frameworks.</p>
+            <p>I am constantly exploring new technologies and staying up-to-date with industry trends. I have a keen eye for design and a knack for problem-solving. My goal is to deliver high-quality, responsive, and user-friendly websites that exceed client expectations.</p>
+            <p>Aside from coding, I enjoy photography, hiking, and playing the guitar. I believe that creativity and inspiration can be found in various aspects of life, and I strive to bring that perspective into my work.</p>
+            <p>If you have a project in mind or would like to collaborate, feel free to reach out to me. I'm always excited to work on new and challenging projects.</p>
+            <div class="personalInfo">
+            <div><span>Name:</span><span>Rajveer singh kaba</span></div>
+            <div><span>Age:</span><span>21 Years</span></div>
+            <div><span>Email:</span><span>Rajveersinghkabawat123@gmail.com</span></div>
+            </div>
+            <div class="button">
+              <a href="CV Resume.pdf" download>
+                <button>Download CV</button>
+              </a>
+            </div>
+          </section>
+          <section class="skillSection">
+
+            <div class="skill">
+            <div class="subject">Hard work</div>
+            <div class="progress_bar">
+            <div class="progress_line" value="94%" style="max-width: 94%"></div>
+            </div>
+            </div>
+
+            <div class="skill">
+              <div class="subject">Web Designing</div>
+              <div class="progress_bar">
+              <div class="progress_line" value="75%" style="max-width: 75%"></div>
+              </div>
+              </div>
+
+              <div class="skill">
+                <div class="subject">creativity</div>
+                <div class="progress_bar">
+                <div class="progress_line" value="73%" style="max-width: 73%"></div>
+                </div>
+                </div>
+
+                <div class="skill">
+                  <div class="subject">Web development</div>
+                  <div class="progress_bar">
+                  <div class="progress_line" value="85%" style="max-width: 85%"></div>
+                  </div>
+                  </div>
+
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="card">
+    <h2>Services</h2>
+    <div class="card">
+      <div class="content">
+        <p class="heading">Web development
+        </p><p class="para">
+          <p>1. Portfolio websites</p>
+          <p>2. E-commerce websites</p>
+          <p>3. Blog Website</p>
+        
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <p class="heading">Design & Editing
+        </p><p class="para">
+          <p>1. Posters Design</p>
+          <p>2. Banners/Covers</p>
+          <p>3. Videos Editing</p>
+          
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <p class="heading">UX/UI
+        </p><p class="para">
+          <p>1. websites and web applications</p>
+          <p>2. mobile applications</p>
+          <p>3. complex interfaces</p>
+     
+        </p>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form onsubmit=" SendEmail(); reset(); return false;">
+      <form class="form">
+        <input placeholder="Enter your name" class="input" type="text">
+        <input placeholder="Enter your email" class="input" type="text">
+          <input placeholder="Type Your Message...." class="input" type="password">
+      
+        <button>Submit</button>
+      </form>
+    </form>
+  </section>  
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function SendEmail(){
+      Email.send({
+    Host : "smtp.gmail.com",
+    Username : "rajveersinghkabawat@123.com",
+    Password : "krrajveer1234567",
+    To : '500091862@stu.upes.ac.in',
+    From : document.getElementById("email").value,
+    Subject : "New contact form inquiry",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+
+ }
+  </script>
+</body>
+</html>
