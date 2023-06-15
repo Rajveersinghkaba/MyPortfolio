@@ -219,8 +219,12 @@ body {
   }
   
   #contact h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+font-size: 28px;
+  font-family: Helvetica;
+  color: #4bb5b5;
+  text-align: center;
+  margin-bottom: 30px; 
+  text-transform: uppercase; 
   }
   
   .form-group {
@@ -535,10 +539,10 @@ button:hover {
   line-height: 1.5;
 }
 #card h2 {
-  font-size: 28px; /* Increase or decrease the font size as desired */
+  font-size: 28px; 
   font-family: Helvetica;
-  color: #4bb5b5; /* Set the color of the heading */
-  text-align: center; /* Align the heading in the center */
+  color: #4bb5b5; 
+  text-align: center;
   margin-bottom: 30px; /* Adjust the bottom margin as needed */
   text-transform: uppercase; /* Convert the text to uppercase */
 }
